@@ -1,2 +1,1 @@
-# rsschool-cv
-My CV repo
+https://github.com/Kuzmishchew/rsschool-cv/cv 
