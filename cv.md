@@ -3,8 +3,6 @@
 
 ## **Junior Frontend Developer**
 
-*****
-
 ### **Contact information**
 
 **Phone:** +7-912-327-52-13
@@ -12,6 +10,8 @@
 **Email:** kuzmishchew@gmail.com
 
 **Telegram:** @mskuzmis
+
+*****
 
 ### **About me**
 
@@ -37,6 +37,7 @@ CodeWars KATA
 **6ky**
 
 "Does my number look big in this?"
+
 *A Narcissistic Number is a positive number which is the sum of its own digits, each raised to the power of the number of digits in a given base. Code must return true or false (not 'true' and 'false') depending upon whether the given number is a Narcissistic number in base 10. This may be True and False.*
 
 ```
@@ -73,5 +74,7 @@ Magnitogorsk State Technical University, Applied Mathematics and Informatics.
 ### **Languages**
 
 Russian - native.
+
 Ukrainian - native.
+
 English - A2 
