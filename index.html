@@ -94,6 +94,40 @@
                 </li>
             </ul>
         </section>
+
+        <section class="code-example">
+            <h2 class="heading-md">
+                Code examples.
+            </h2>
+            <div class="code">
+                <code class="code-frame">
+                    <span class="expression">function</span> <span class="name">narcissistic</span>(<span class="value">value</span>) { <br>
+                        &nbsp;&nbsp;<span class="expression">let</span> result = 0; <br>
+                        &nbsp;&nbsp;value = value.<span class="name">toString()</span>; <br>
+                        
+                        &nbsp;&nbsp;<span class="value">for (</span><span class="expression">let</span> i = 0; i &lt; value.length; ++i<span class="value">) {</span>  <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;result += Math.<span class="name">pow(</span>value[i], value.length<span class="name">)</span>;<br>
+                        &nbsp;&nbsp;<span class="value">}</span><br>
+                        <br>
+                        &nbsp;&nbsp;<span class="value">return</span> (result == +value) ? <span class="expression">true</span> : <span class="expression">false</span>;<br>
+                      }
+                </code>
+                <div class="code-description">
+                    <h3 class="heading-sm">
+                        codewars KATA<br>
+                        6ky “Does my number look big in this?”
+                    </h3>
+                    <p class="text">
+                        A Narcissistic Number is a positive number which is the sum of 
+                        its own digits, each raised to the power of the number of digits 
+                        in a given base. Code must return true or false (not 'true' and 'false')
+                        depending upon whether the given number is a Narcissistic number in base 10.
+                        This may be True and False.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         
     </main>
 

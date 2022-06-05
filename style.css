@@ -127,3 +127,36 @@ body{
     margin-right: 22px;
 }
 
+/* Блок с примером кода
+Пришлось повозиться, стандратный тег pre не давал того результата,
+которго я ожидал. Использовать автоматические генерируемый код не хотелось. */
+.code{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    paddinG: 0;
+}
+.code-frame{
+    display: block;
+    width: 400px;
+    height: 150px;
+    padding: 20px;
+    background: #1D1F21;
+    color: #FFFFFF;
+}
+.expression{
+    color: #81A2BE;
+}
+.name{
+    color: #C9CF61;
+}
+.value{
+    color: #9E4CC2;
+}
+.code-description{
+    width: 50%;
+}
+.code-description .heading-sm{
+    margin: 0;
+    Padding: 0;
+}
