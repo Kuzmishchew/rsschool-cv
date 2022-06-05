@@ -5,6 +5,9 @@ body{
     padding: 0;
     color: #21243D;
 }
+section{
+    margin: 40px 0;
+}
 .wrapper{
     width: 1152px;
     margin: 0 auto;
@@ -159,4 +162,12 @@ body{
 .code-description .heading-sm{
     margin: 0;
     Padding: 0;
+}
+
+
+.languages-list{
+    display: flex;
+}
+.language-item{
+    margin-right: 80px;
 }
