@@ -7,9 +7,16 @@ body{
 .wrapper{
     width: 1152px;
     margin: 0 auto; 
-    border: 1px solid black;
+    box-sizing: border-box;
 }
-
+.main-heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+.text{
+    font-size: 18px;
+    font-weight: 400;
+}
 
 .header{
     height: 80px;
@@ -26,10 +33,46 @@ body{
 }
 .header-navigation__item{
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 80px;
 }
 .header-navigation__item a:hover{
     cursor: pointer;
     text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
 }
+
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.about-me__text{
+    width: 700px;
+}
+.about-me__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.photo{
+    width: 243px;
+    height: 243px;
+    border-radius: 100%;
+    box-shadow: -10px 15px 0px #FFF3D3;
+}
+.contact-list{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.contact-list__item-gm{
+    list-style-image: url(src/icons/gmail.svg);
+}
+.contact-list__item-git{
+    list-style-image: url(src/icons/github.svg);
+}
+.contact-list__item-tg{
+    list-style-image: url(src/icons/telegram.svg);
+}
+
+
