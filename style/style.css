@@ -91,13 +91,13 @@ section{
     color: inherit;
 }
 .contact-list__item-gm{
-    list-style-image: url(/src/icons/gmail.svg);
+    list-style-image: url(../src/icons/gmail.svg);
 }
 .contact-list__item-git{
-    list-style-image: url(/src/icons/github.svg);
+    list-style-image: url(../src/icons/github.svg);
 }
 .contact-list__item-tg{
-    list-style-image: url(/src/icons/telegram.svg);
+    list-style-image: url(../src/icons/telegram.svg);
 }
 
 /* Блок с проектами
@@ -208,7 +208,7 @@ section{
     list-style-type: none;
 }
 .footer-navigation__item_git{
-    list-style-image: url(/src/icons/github_wht.svg);
+    list-style-image: url(../src/icons/github_wht.svg);
 }
 .footer-navigation__item_git a{
     color: white;
