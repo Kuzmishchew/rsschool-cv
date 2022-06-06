@@ -86,6 +86,10 @@ section{
     font-size: 14px;
     line-height: 24px;
 }
+.contact-list a{
+    text-decoration: none;
+    color: inherit;
+}
 .contact-list__item-gm{
     list-style-image: url(src/icons/gmail.svg);
 }
