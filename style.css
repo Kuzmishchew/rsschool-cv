@@ -164,10 +164,11 @@ section{
     Padding: 0;
 }
 
-
-.languages-list{
+.text-inform{
     display: flex;
 }
-.language-item{
-    margin-right: 80px;
+.text-inform .heading-sm,
+.text-inform .text{
+    margin: 5px 0;
 }
+
