@@ -42,7 +42,6 @@ section{
 .header-navigation{
     width: 45%;
     height: 100%;
-    
 }
 .header-navigation__list{
     display: flex;
@@ -66,7 +65,8 @@ section{
 /* Блок с информацией обо мне */
 .about-me{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    flex-flow: wrap;   
 }
 .about-me__text{
     width: 700px;
@@ -204,7 +204,7 @@ section{
     width: 1152px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .footer-navigation{
@@ -226,4 +226,69 @@ section{
     text-decoration: none;
 }
 
+@media (min-width: 779px) and (max-width: 1152px) {
+    .wrapper {
+        width: 100%;
+    }
+    .footer-wrapper {
+        width: 100%;
+    }
+}
 
+@media (max-width: 778px) {
+    .wrapper{
+        width: 778px;
+    }
+    .footer-wrapper {
+        width: 100%;
+    }
+    .header {
+        display: none;
+    }
+
+    .about-me{
+        flex-direction: column;
+    }
+    .about-me__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        order: -1;
+    }
+    .contact-list {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    .contact-list:only-child {
+        margin-left: 20px;
+    }
+    
+    .project {
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 1px #1D1F21 solid;
+    }
+    .project__text {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        order: 1;
+    }
+    .project__image_left {
+        justify-content: flex-start;
+    }
+    
+    .code {
+        flex-direction: column;
+    }
+    .code-description {
+        width: 100%;
+    }
+
+    .text-inform {
+        flex-direction: column;
+    }
+}
