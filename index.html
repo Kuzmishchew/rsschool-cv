@@ -2,10 +2,209 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>CV</title>
 </head>
 <body>
     
+    <header class="header wrapper">
+        <nav class="header-navigation">
+            <ul class="header-navigation__list">
+                <li class="header-navigation__item"><a href="#my-projects">my projects</a></li>
+                <li class="header-navigation__item"><a href="#skills">skills</a></li>
+                <li class="header-navigation__item"><a href="#code-example">code example</a></li>
+                <li class="header-navigation__item"><a href="#experience">experiense</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+
+        <section class="about-me">
+            <div class="about-me__text">
+                <h1 class="heading-lg">
+                    Hi! My name is Max.<br>I am a beginner frontend developer.
+                </h1>
+                <p class="text">
+                    I am work in technical support and study frontend development. 
+                    Today I am beginer in this field, but try to do something new every day. 
+                    In my vision, I will be working in this area by the end of 2022.
+                </p>
+            </div>
+            <div class="about-me__data">
+                <img src="./src/img/me.jpg" alt="avatar" class="photo">
+                <ul class="contact-list">
+                    <li class="contact-list__item-gm"><a href="mailto:kuzmishchew@gmail.com">kuzmishchew@gmail.com</a></li>
+                    <li class="contact-list__item-git"><a href="https://github.com/kuzmishchew" target="_blank">kuzmishchew</a></li>
+                    <li class="contact-list__item-tg"><a href="tg://resolve?domain=mskuzmis">mskzumis</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="my-projects" id="my-projects">
+            <h2 class="heading-md">My projects.</h2>
+
+            <div class="project">
+                <div class="project__text project__text_left">
+                    <h3 class="heading-sm">landing</h3>   
+                    <p class="text">Kitchenware store website with a carousel at the bottom of the page</p>
+                    <p><a href="https://kuzmishchew.github.io/landing_kinn/" target="_blank" class="project__link">look at me</a></p>   
+                </div>
+                <a href="https://kuzmishchew.github.io/landing_kinn/" target="_blank" class="project__image">
+                    <img src="./src/img/project_landing.png" alt="#KINN">
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="https://kuzmishchew.github.io/pat_vigenere/" target="_blank" class="project__image project__image_left">
+                    <img src="./src/img/project_text.png" alt="Vigener">
+                </a>
+                <div class="project__text">
+                    <h3 class="heading-sm">test in text</h3>
+                    <p class="text">Site that tries to encrypt text in 'Chiffre de Vigenère'</p>
+                    <p><a href="https://kuzmishchew.github.io/pat_vigenere/" target="_blank" class="project__link">look at me</a></p> 
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="heading-md">Skills.</h2>
+            <ul class="skill-cards-block">
+                <li class="skill-card">
+                    <img src="src/icons/html.svg" alt="html">
+                    <div>
+                        <h3 class="heading-sm">.html</h3>
+                        <p class="text">semantic layout</p>
+                    </div>
+                </li>
+                <li class="skill-card">
+                    <img src="src/icons/css.svg" alt="css">
+                    <div>
+                        <h3 class="heading-sm">.css</h3>
+                        <p class="text">clear styling </p>
+                    </div>
+                </li>
+                <li class="skill-card">
+                    <img src="src/icons/js.svg" alt="js">
+                    <div>
+                        <h3 class="heading-sm">.js</h3>
+                        <p class="text">actions on the page</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="code-example" id="code-example">
+            <h2 class="heading-md">
+                Code examples.
+            </h2>
+            <div class="code">
+                <code class="code-frame">
+                    <span class="expression">function</span> <span class="name">narcissistic</span>(<span class="value">value</span>) { <br>
+                        &nbsp;&nbsp;<span class="expression">let</span> result = 0; <br>
+                        &nbsp;&nbsp;value = value.<span class="name">toString()</span>; <br>
+                        
+                        &nbsp;&nbsp;<span class="value">for (</span><span class="expression">let</span> i = 0; i &lt; value.length; ++i<span class="value">) {</span>  <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;result += Math.<span class="name">pow(</span>value[i], value.length<span class="name">)</span>;<br>
+                        &nbsp;&nbsp;<span class="value">}</span><br>
+                        <br>
+                        &nbsp;&nbsp;<span class="value">return</span> (result == +value) ? <span class="expression">true</span> : <span class="expression">false</span>;<br>
+                      }
+                </code>
+                <div class="code-description">
+                    <h3 class="heading-sm">
+                        codewars KATA<br>
+                        6ky “Does my number look big in this?”
+                    </h3>
+                    <p class="text">
+                        A Narcissistic Number is a positive number which is the sum of 
+                        its own digits, each raised to the power of the number of digits 
+                        in a given base. Code must return true or false (not 'true' and 'false')
+                        depending upon whether the given number is a Narcissistic number in base 10.
+                        This may be True and False.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="text-inform" id="experience">
+
+            <div class="text-inform__block">
+                <h2 class="heading-md">
+                    Work experience.
+                </h2>
+                <div class="text-inform_item">
+                    <h3 class="heading-sm">
+                        august 2018 - april 2021
+                    </h3>
+                    <p class="text">
+                        work in sales
+                    </p>
+                </div>
+                <div class="text-inform_item">
+                    <h3 class="heading-sm">
+                        april 2021 - today
+                    </h3>
+                    <p class="text">
+                        technical support in electronic document exchange, Diadoc, SKB Kontur.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-inform__block">
+                <h2 class="heading-md">
+                    Education.
+                </h2>
+                <h3 class="heading-sm">
+                    incomplete higher education
+                </h3>
+                <p class="text">
+                    Magnitogorsk State Technical University, Applied Mathematics and Informatics.
+                </p>
+            </div>
+
+            <div class="text-inform__block">
+                <h2 class="heading-md">
+                    Languages.
+                </h2>
+                <div class="text-inform_item">
+                    <h3 class="heading-sm">
+                        russian
+                    </h3>
+                    <p class="text">
+                        native
+                    </p>
+                </div>
+                <div class="text-inform_item">
+                    <h3 class="heading-sm">
+                        english
+                    </h3>
+                    <p class="text">
+                        A2
+                    </p>
+                </div>
+            </div>
+           
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <nav class="footer-navigation">
+               <ul class="footer-navigation__list">
+                    <li class="footer-navigation__item"><a href="https://rs.school/js/" target="_blank"><img src="./src/logo/rs_school.svg" alt="RS SCHOOL"></a></li>
+                    <li class="footer-navigation__item_git"><a href="https://github.com/kuzmishchew" target="_blank">kuzmishchew</a></li>
+               </ul>
+            </nav>
+            <time>
+                2022
+            </time>
+        </div>
+    </footer>
+
 </body>
 </html>
